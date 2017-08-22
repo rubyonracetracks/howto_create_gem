@@ -1,6 +1,6 @@
 # Creating a Gem
 
-This [Ruby on Racetracks](http://www.rubyonracetracks.com/) document walks you through the process of starting a new gem.  Starting a new gem is not difficult, but there are numerous details to take care of.
+This [Ruby on Racetracks](http://www.rubyonracetracks.com/) document walks you through all of the important details in the process of starting a new gem.  Starting a new gem is not difficult, but there are numerous details to take care of.  This document delves into more detail than most tutorials, but the result is higher quality work.
 
 ## Prerequisites
 * You should complete the Docker Tutorial from [Ruby on Racetracks](http://www.rubyonracetracks.com/tutorials.html).
