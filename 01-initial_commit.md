@@ -69,7 +69,8 @@ if [ -z "$GIT_NAME" ]; then
 fi
 ```
 * If you haven't already done so, use the "cd" command in Docker to enter the root directory of your app.
-* Enter the command "sh credentials.sh".  If you haven't already done so, you will be prompted to enter your Git credentials.
+* Enter the command "sh credentials.sh".  If you haven't already done so, you will be prompted to enter your Git credentials.  This allows you to git commit.
+* Run the credentials.sh script every time you reset your Docker container, because your credentials get erased.
 
 ## .gitignore
 Add the following lines to the end of the .gitignore file:
