@@ -1,6 +1,6 @@
 # Chapter 1: Bundler
-
-* Enter the following command:
+* Reset the Docker container based on one of the rbenv-general Docker images.
+* In Docker, enter the following command:
 ```
 bundler gem (name of gem)
 ```
