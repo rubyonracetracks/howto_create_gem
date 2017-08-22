@@ -51,6 +51,21 @@ gem install *.gem
 * Enter the command "sh gem_install.sh".  Your gem should be installed.
 * NOTE: Yes, I am aware of the "rake install" command, but this script provides an experience much closer to that of an end-user.  For one of my gems (generic_app), I once had an error message about a conflict between the bin/setup executable and one of the gem dependencies when I installed it with the "gem install" command but not with the "rake install" command.  (I ended up rewriting the source code from scratch, though I was able to use the gem-specific parts of the old source code to save time.)
 
+## git_check.sh
+* In the root directory of your gem, add the file git_check.sh with the following contents:
+```
+#!/bin/bash
+
+# Run this script before entering "git add" and "git commit".
+
+sh gem_test.sh
+
+echo '----------'
+echo 'git status'
+git status
+```
+* Enter the command "sh git_check.sh".  You'll see that the scripts you just created are new, and the the spec/(name of gem)_spec.rb and (name of gem).gemspec have been modified.
+
 ## Wrapping Up
 * Enter the following commands:
 ```
