@@ -42,4 +42,5 @@ bin/console
 gem build *.gemspec
 gem install *.gem
 ```
+* Enter the command "sh gem_install.sh".  Your gem should be installed.
 * NOTE: Yes, I am aware of the "rake install" command, but this script provides an experience much closer to that of an end-user.  For one of my gems (generic_app), I once had an error message about a conflict between the bin/setup executable and one of the gem dependencies when I installed it with the "gem install" command but not with the "rake install" command.  (I ended up rewriting the source code from scratch, though I was able to use the gem-specific parts of the old source code to save time.)
