@@ -87,8 +87,4 @@ tmp*
 git add .
 git commit -m "Initial commit"
 ```
-* Create a [GitHub](https://github.com/) repository for your gem's source code.
-* Enter the following command:
-```
-git push origin master
-```
+* Create a [GitHub](https://github.com/) repository for your gem's source code, and follow the instructions for pushing the code you've written so far.
