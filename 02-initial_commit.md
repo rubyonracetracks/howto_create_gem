@@ -74,7 +74,7 @@ tmp*
 * Enter the following commands:
 ```
 git add .
-git commit -m "Added credentials.sh; updated .gitignore"
+git commit -m "Initial commit"
 ```
 * Create a [GitHub](https://github.com/) repository for your gem's source code.
 * Enter the following command:
