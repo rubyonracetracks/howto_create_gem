@@ -1,4 +1,5 @@
 # Chapter 1: Initial Commit
+In this chapter, you will start a new Ruby gem and commit the source code to GitHub.
 
 ## Bundler
 * Reset the Docker container based on one of the rbenv-general Docker images.
@@ -73,12 +74,105 @@ fi
 * Run the credentials.sh script every time you reset your Docker container, because your credentials get erased.
 
 ## .gitignore
-Add the following lines to the end of the .gitignore file:
+* Add the following lines to the beginning of the .gitignore file:
 ```
+########################
+# BEGIN:initial contents
+########################
+```
+* Add the following lines to the end of the .gitignore file:
+```
+#######################
+# END: initial contents
+#######################
+
+################################
+# BEGIN: Windows files to ignore
+################################
+# FROM https://github.com/github/gitignore/blob/master/Global/Windows.gitignore
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+##############################
+# END: Windows files to ignore
+##############################
+
+#############################
+# BEGIN: OS X files to ignore
+#############################
+# FROM https://github.com/github/gitignore/blob/master/Global/macOS.gitignore
+
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+###########################
+# END: OS X files to ignore
+###########################
+
+##############################
+# BEGIN: Linux files to ignore
+##############################
+# FROM https://github.com/github/gitignore/blob/master/Global/Linux.gitignore
+
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+############################
+# END: Linux files to ignore
+############################
+
 *.gem
 tmp*
 .DS_Store
 /log/
+
+# NOTE: Comments MUST get their own dedicated lines and cannot be shared with that of the file name.
 ```
 
 ## Starting the Git Repository
