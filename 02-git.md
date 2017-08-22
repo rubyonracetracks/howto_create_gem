@@ -58,3 +58,26 @@ if [ -z "$GIT_NAME" ]; then
   echo
 fi
 ```
+* If you haven't already done so, use the "cd" command in Docker to enter the root directory of your app.
+* Enter the command "sh credentials.sh".  If you haven't already done so, you will be prompted to enter your Git credentials.
+
+## .gitignore
+Add the following lines to the end of the .gitignore file:
+```
+*.gem
+tmp*
+.DS_Store
+/log/
+```
+
+## Starting the Git Repository
+* Enter the following commands:
+```
+git add .
+git commit -m "Added credentials.sh; updated .gitignore"
+```
+* Create a [GitHub](https://github.com/) repository for your gem's source code.
+* Enter the following command:
+```
+git push origin master
+```
