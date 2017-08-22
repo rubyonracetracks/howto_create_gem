@@ -1,6 +1,6 @@
 # Chapter 2: Basic Scripts
 
-In this chapter, you will add scripts for basic tasks like setting up, testing, and installing your gem.
+In this chapter, you will add basic scripts in the root directory for executing routine tasks in only one step.  I find these scripts to be necessary, because projects have more tasks and details than I can remember verbatim.
 
 ## Updating the Gemspec File
 * The gemspec file is the (name of gem).gemspec file in your gem's root directory.
