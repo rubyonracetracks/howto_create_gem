@@ -2,6 +2,12 @@
 
 In this chapter, you will add basic scripts in the root directory for executing routine tasks in only one step.  I find these scripts to be necessary, because projects have more tasks and details than I can remember verbatim.
 
+## New Branch
+Enter the following command:
+```
+git checkout -b 02-basic_scripts
+```
+
 ## Updating the Gemspec File
 * The gemspec file is the (name of gem).gemspec file in your gem's root directory.
 * In this file, fill in the authors, email, summary, description, and homepage parameters.  The "bundle install" command will not work until certain parameters are provided.
@@ -50,5 +56,12 @@ gem install *.gem
 ```
 git add .
 git commit -m "Added basic scripts"
-git push origin master
+git push origin 02-basic_scripts
+```
+* Go to the GitHub repository and click on the "Compare and pull request" button for this 02-basic_scripts branch.
+* Accept this pull request to merge it with the master branch, but do NOT delete this branch.
+* Enter the following commands:
+```
+git checkout master
+git pull
 ```
