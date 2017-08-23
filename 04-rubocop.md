@@ -49,6 +49,16 @@ Metrics/LineLength:
   Exclude:
     - (name of gemspec file)
 ```
+* Enter the command "bundle exec rubocop -D".  There should be no offenses remaining.  (If there are, correct them, and run "bundle exec rubocop -D" to make sure they're gone.)
+
+## git_check.sh
+* Add the following lines to git_check.sh just before the "git status" section:
+```
+echo '----------------------'
+echo 'bundle exec rubocop -D'
+bundle exec rubocop -D
+```
+* Enter the command "sh git_check.sh".  All tests should pass, and there should be no offenses.
 
 ## Wrapping Up
 * Enter the following commands:
