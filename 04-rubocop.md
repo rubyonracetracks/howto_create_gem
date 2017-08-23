@@ -43,6 +43,12 @@ task default: :spec
 * Enter the command "bundle exec rubocop -D".  I see 7 offenses remaining.
 * In the gemspec file, use quotes instead of "%q{}" for the summary and description parameters.
 * Enter the command "bundle exec rubocop -D".  I see 3 offenses remaining.
+* Create the file .rubocop.yml with the following content (with the name of the gemspec file filled in):
+```
+Metrics/LineLength:
+  Exclude:
+    - (name of gemspec file)
+```
 
 ## Wrapping Up
 * Enter the following commands:
