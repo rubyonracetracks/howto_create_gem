@@ -49,6 +49,7 @@ echo 'bundle viz --file=log/diagram-gems --format=svg --requirements --version'
 bundle viz --file=log/diagram-gems --format=jpg --requirements --version
 echo 'Gem dependency diagram: log/diagram-gems.jpg'
 ```
+* Enter the command "sh code_test.sh".
 
 ## Wrapping Up
 * Enter the following commands:
@@ -56,7 +57,7 @@ echo 'Gem dependency diagram: log/diagram-gems.jpg'
 git add .
 git commit -m "Added additional metrics"
 git push origin 05-other_metrics
-``
+```
 * Go to the GitHub repository and click on the "Compare and pull request" button for this branch.
 * Accept this pull request to merge it with the master branch.  When the merge has been completed, you may delete this branch.
 * Enter the following commands:
