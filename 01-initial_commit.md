@@ -169,7 +169,6 @@ Temporary Items
 
 *.gem
 tmp*
-.DS_Store
 /log/
 
 # NOTE: Comments MUST get their own dedicated lines and cannot be shared with that of the file name.
