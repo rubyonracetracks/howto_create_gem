@@ -16,7 +16,39 @@ Enter the command "git checkout -b 05-other_metrics".
 * Enter the command "sh git_check.sh". All tests should pass, and there should be no offenses.
 
 ## code_test.sh
+* Add the file code_test.sh with the following content:
+```
+#!/bin/bash
 
+DIR_PARENT="${PWD%/*}"
+DIR_TMP="$DIR_PARENT/tmp"
+mkdir -p log
+rm -rf tmp
+
+echo '--------------'
+echo 'bundle install'
+bin/setup >/dev/null
+
+echo
+echo '----------------------'
+echo 'bundle exec rubocop -D'
+bundle exec rubocop -D
+
+echo
+echo '------------------------'
+echo 'bundle exec bundle-audit'
+bundle exec bundle-audit
+
+echo '----------------------------------------------------------'
+echo 'bundle exec gemsurance --output log/gemsurance_report.html'
+bundle exec gemsurance --output log/gemsurance_report.html
+echo 'Gemsurance Report: log/gemsurance_report.html'
+
+echo '------------------------------------------------------------------------'
+echo 'bundle viz --file=log/diagram-gems --format=svg --requirements --version'
+bundle viz --file=log/diagram-gems --format=jpg --requirements --version
+echo 'Gem dependency diagram: log/diagram-gems.jpg'
+```
 
 ## Wrapping Up
 * Enter the following commands:
