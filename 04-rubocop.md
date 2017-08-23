@@ -32,9 +32,17 @@ Enter the command "git checkout -b 04-rubocop".
 ```
 task default: :spec
 ```
-* Enter the command "bundle exec rubocop -D'.  I see 30 offenses remaining.
+* Enter the command "bundle exec rubocop -D".  I see 30 offenses remaining.
 * In the Gemfile, replace the double quotes with single quotes in the line beginning with "source".  Add a space between "{" and "|repo_name|".
-* Enter the command "bundle exec rubocop -D'.  I see 28 offenses remaining.
+* Enter the command "bundle exec rubocop -D".  I see 28 offenses remaining.
+* In (name of spec).gemspec, follow RuboCop's recommendations for replacing double quotes with single quotes.
+* Enter the command "bundle exec rubocop -D".  I see 10 offenses remaining.
+* In the gemspec file, follow RuboCop's recommendations for the line containing "spec.files".
+* Enter the command "bundle exec rubocop -D".  I see 8 offenses remaining.
+* In the gemspec file, add a blank line after "# coding: utf-8".
+* Enter the command "bundle exec rubocop -D".  I see 7 offenses remaining.
+* In the gemspec file, use quotes instead of "%q{}" for the summary and description parameters.
+* Enter the command "bundle exec rubocop -D".  I see 3 offenses remaining.
 
 ## Wrapping Up
 * Enter the following commands:
