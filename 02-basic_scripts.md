@@ -64,7 +64,7 @@ echo '----------'
 echo 'git status'
 git status
 ```
-* Enter the command "sh git_check.sh".  You'll see that the scripts you just created are new, and the the spec/(name of gem)_spec.rb and (name of gem).gemspec have been modified.
+* Enter the command "sh git_check.sh".  Both tests should pass.  You'll see that the scripts you just created are new, and the the spec/(name of gem)_spec.rb and (name of gem).gemspec have been modified.
 
 ## Wrapping Up
 * Enter the following commands:
