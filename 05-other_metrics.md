@@ -11,7 +11,6 @@ Enter the command "git checkout -b 05-other_metrics".
   spec.add_development_dependency 'bundler-audit'
   spec.add_development_dependency 'gemsurance'
   spec.add_development_dependency 'ruby-graphviz'
-  spec.add_development_dependency 'sandi_meter'
   spec.add_development_dependency 'simplecov'
 ```
 * Enter the command "sh git_check.sh". All tests should pass, and there should be no offenses.
