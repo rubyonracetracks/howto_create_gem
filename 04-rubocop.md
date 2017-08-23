@@ -12,9 +12,31 @@ Enter the command "git checkout -b 04-rubocop".
 ```
   spec.add_development_dependency 'rubocop'
 ```
-* Enter the command "sh gem_test.sh".
+* Enter the command "sh gem_test.sh".  All tests should pass.
 
-### Wrapping Up
+## Complying with RuboCop
+* Enter the command "bundle exec rubocop -D".  At this point, I see that there are 46 offenses.
+* Replace the double quotes in bin/console with single quotes.
+* Enter the command "bundle exec rubocop -D".  At this point, I see 43 offenses.
+* Edit the lib/(name of gem)/version.rb file.  Replace the line defining the version number with the following:
+```
+  VERSION = '0.0.0'.freeze
+```
+* Enter the command "bundle exec rubocop -D".  I see 41 offenses.
+* In spec/spec_helper.rb, replace the double quotes with single quotes.
+* Enter the command "bundle exec rubocop -D".  I see 38 offenses remaining.
+* In spec/(name of app)_spec.rb, replace the double quotes with single quotes.  I see 35 offenses remaining.
+* In lib/(name of app).rb, replace the double quotes with single quotes, and add the line "#" before the line that begins with "module".  I see 33 offenses remaining.
+* In the Rakefile, replace the double quotes with single quotes.
+* In the Rakefile, replace the line "task :default => :spec" with the following:
+```
+task default: :spec
+```
+* Enter the command "bundle exec rubocop -D'.  I see 30 offenses remaining.
+* In the Gemfile, replace the double quotes with single quotes in the line beginning with "source".  Add a space between "{" and "|repo_name|".
+* Enter the command "bundle exec rubocop -D'.  I see 28 offenses remaining.
+
+## Wrapping Up
 * Enter the following commands:
 ```
 git add .
@@ -29,5 +51,5 @@ git checkout master
 git pull
 ```
 
-### Conclusions
+## Conclusions
 From now on, be sure to check for RuboCop compliance before entering a "git commit" command.  This is now covered in the git_check.sh script.
