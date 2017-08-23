@@ -74,7 +74,7 @@ git commit -m "Added basic scripts"
 git push origin 02-basic_scripts
 ```
 * Go to the GitHub repository and click on the "Compare and pull request" button for this 02-basic_scripts branch.
-* Accept this pull request to merge it with the master branch, but do NOT delete this branch.
+* Accept this pull request to merge it with the master branch, and then delete this branch once it has been merged.
 * Enter the following commands:
 ```
 git checkout master
