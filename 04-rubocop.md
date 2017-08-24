@@ -12,7 +12,7 @@ Enter the command "git checkout -b 04-rubocop".
 ```
   spec.add_development_dependency 'rubocop'
 ```
-* Enter the command "sh gem_test.sh".  All tests should pass.
+* Enter the command "sh gem_test.sh".  This installs RuboCop and runs all tests, which should pass.
 
 ## Complying with RuboCop
 * Enter the command "bundle exec rubocop -D".  At this point, I see that there are 46 offenses.
