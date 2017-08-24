@@ -40,7 +40,12 @@ echo '----------------------'
 echo 'bundle exec rubocop -D'
 bundle exec rubocop -D
 
-echo
+# Update the local ruby-advisory-db advisory database
+echo '-------------------------------'
+echo 'bundle exec bundle-audit update'
+bundle exec bundle-audit update
+
+# Audit the gems listed in Gemfile.lock for vulnerabilities
 echo '------------------------'
 echo 'bundle exec bundle-audit'
 bundle exec bundle-audit
@@ -56,6 +61,25 @@ bundle viz --file=log/diagram-gems --format=jpg --requirements --version
 echo 'Gem dependency diagram: log/diagram-gems.jpg'
 ```
 * Enter the command "sh code_test.sh".  There should be no offenses.  Reports are saved in the log directory.
+
+## SimpleCov
+* Add the following lines to the BEGINNING of the spec/spec_helper.rb file:
+```
+require 'simplecov'
+SimpleCov.start
+```
+* Enter the command "sh gem_test.sh".  You'll see that your gem has 100% test coverage.  Coverage test results are in the coverage directory.
+
+## all.sh
+* Create the file all.sh with the following content:
+```
+#!/bin/bash
+
+sh gem_test.sh
+sh gem_install.sh
+sh code_test.sh
+```
+* Enter the command "sh all.sh".  If all goes well, you are ready to move on.
 
 ## Wrapping Up
 * Enter the following commands:
