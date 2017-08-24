@@ -13,7 +13,7 @@ Enter the command "git checkout -b 05-other_metrics".
   spec.add_development_dependency 'ruby-graphviz'
   spec.add_development_dependency 'simplecov'
 ```
-* Add the following lines to .rubocop.yml (filling in the name of the gemspec);
+* Add the following lines to .rubocop.yml (filling in the name of the gemspec file);
 ```
 Metrics/BlockLength:
   Exclude:
