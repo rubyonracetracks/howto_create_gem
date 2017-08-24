@@ -10,6 +10,7 @@ bundler gem (name of gem)
 * When prompted on the tests to use, select rspec.  (There are tutorials on the gem creation process, and most of them use RSpec.  Also, I prefer Minitest for Rails projects, so selecting RSpec for Ruby gems broadens my know-how.)
 * When you are asked about whether you wish to license your code under the MIT license, enter "y" for yes.  (If there is any specific reason you do not wish to do so, then enter "n" for no.)
 * When you are prompted on whether to include a code of conduct, enter "y" for yes.
+* Use the "cd" command in Docker to enter the root directory of your app.
 
 ## credentials.sh
 
@@ -69,7 +70,6 @@ if [ -z "$GIT_NAME" ]; then
   echo
 fi
 ```
-* If you haven't already done so, use the "cd" command in Docker to enter the root directory of your app.
 * Enter the command "sh credentials.sh".  If you haven't already done so, you will be prompted to enter your Git credentials.  This allows you to git commit.
 * Run the credentials.sh script every time you reset your Docker container, because your credentials get erased.
 
