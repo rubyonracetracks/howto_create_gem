@@ -180,4 +180,4 @@ tmp*
 git add .
 git commit -m "Initial commit"
 ```
-* Create a [GitHub](https://github.com/) repository for your gem's source code, and follow the instructions for pushing the code you've written so far.
+* Create a [GitHub](https://github.com/) repository for your gem's source code, and follow the instructions for pushing the code you've written so far.  Do not add a README file, a .gitignore file, or a license, because you already took care of these details.
