@@ -18,6 +18,12 @@ Enter the command "git checkout -b 05-other_metrics".
 Metrics/BlockLength:
   Exclude:
     - (gemspec file)
+
+AllCops:
+  Exclude:
+    - tmp/vulnerabilities/*
+    - tmp/vulnerabilities/lib/*
+    - tmp/vulnerabilities/spec/*    
 ```
 * Enter the command "sh git_check.sh". All tests should pass, and there should be no offenses.
 
@@ -79,7 +85,8 @@ sh gem_test.sh
 sh gem_install.sh
 sh code_test.sh
 ```
-* Enter the command "sh all.sh".  If all goes well, you are ready to move on.
+* Enter the command "sh all.sh".  All should go well.
+* Enter the command "sh git_check.sh".  All should go well, in which case you are ready to move on.
 
 ## Wrapping Up
 * Enter the following commands:
