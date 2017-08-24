@@ -25,7 +25,7 @@ AllCops:
     - tmp/vulnerabilities/lib/*
     - tmp/vulnerabilities/spec/*    
 ```
-* Enter the command "sh git_check.sh". All tests should pass, and there should be no offenses.
+* Enter the command "sh git_check.sh". The additional gems will be installed, all tests should pass, and there should be no offenses.
 
 ## code_test.sh
 * Add the file code_test.sh with the following content:
