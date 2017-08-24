@@ -24,9 +24,7 @@ It's a good idea to reset your development environment occasionally. Because you
 * Use the cd command to enter your project.
 
 ## Setting Up Your Project
-* Enter the command "sh credentials.sh".
-* In your project's root directory, enter the command "sh gem_test.sh" to set things up. This takes care of "bundle install" and testing process.
-* Enter the command "sh gem_install.sh".  This installs your gem.
+* Enter the command "sh credentials.sh; sh gem_test.sh; sh gem_install.sh".
 * If all went well, you're back in business.
 
 ## Conclusions
