@@ -55,7 +55,7 @@ echo 'bundle viz --file=log/diagram-gems --format=svg --requirements --version'
 bundle viz --file=log/diagram-gems --format=jpg --requirements --version
 echo 'Gem dependency diagram: log/diagram-gems.jpg'
 ```
-* Enter the command "sh code_test.sh".
+* Enter the command "sh code_test.sh".  There should be no offenses.  Reports are saved in the log directory.
 
 ## Wrapping Up
 * Enter the following commands:
