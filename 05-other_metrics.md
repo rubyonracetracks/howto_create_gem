@@ -17,7 +17,7 @@ Enter the command "git checkout -b 05-other_metrics".
 ```
 Metrics/BlockLength:
   Exclude:
-  - (gemspec file)
+    - (gemspec file)
 ```
 * Enter the command "sh git_check.sh". All tests should pass, and there should be no offenses.
 
