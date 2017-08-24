@@ -13,6 +13,12 @@ Enter the command "git checkout -b 05-other_metrics".
   spec.add_development_dependency 'ruby-graphviz'
   spec.add_development_dependency 'simplecov'
 ```
+* Add the following lines to .rubocop.yml (filling in the name of the gemspec);
+```
+Metrics/BlockLength:
+  Exclude:
+  - (gemspec file)
+```
 * Enter the command "sh git_check.sh". All tests should pass, and there should be no offenses.
 
 ## code_test.sh
