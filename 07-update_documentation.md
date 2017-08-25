@@ -16,6 +16,15 @@ On the CodeClimate page for your project, you will see 5 issues.  In this chapte
 * Fill in your GitHub username in the "Contributing" and "Code of Conduct" sections.
 * Fill in the description of your gem.
 * Fill in the instructions on how to use your gem.
+* Replace the Development section with the following:
+```
+* To test your gem, enter the command "sh gem_test.sh".
+* To install your gem, enter the command "sh gem_install.sh".
+* To test the source code for various metrics, enter the command "sh code_test.sh".
+* To do all of the above, enter the command "sh all.sh".
+* To run an interactive prompt, enter the command "sh console.sh".
+* To release a new version, update the version number in the lib/(name of gem)/version.rb file, and then run "bundle exec rake release".  This creates a git tag for the version, push git commits and tags, and pushes the `.gem` file to [rubygems.org](https://rubygems.org).
+```
 
 ## Wrapping Up
 * Enter the following commands:
