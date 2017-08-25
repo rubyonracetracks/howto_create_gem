@@ -13,6 +13,7 @@ On the CodeClimate page for your project, you will see 5 issues.  In this chapte
 * Enter the command "sh git_check.sh".  All tests should pass, there should be 100% test coverage, and there should be no offenses.
 
 ## README.md File
+* Fill in your username in the "Contributing" section.
 * Fill in the description of your gem.
 * Fill in the instructions on how to use your gem.
 
