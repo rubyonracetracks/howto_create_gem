@@ -18,8 +18,8 @@ On the CodeClimate page for your project, you will see 5 issues.  In this chapte
 * Fill in the instructions on how to use your gem.
 * Replace the Development section with the following:
 ```
-* To test your gem, enter the command "sh gem_test.sh".
-* To install your gem, enter the command "sh gem_install.sh".
+* To test this gem, enter the command "sh gem_test.sh".
+* To install this gem, enter the command "sh gem_install.sh".
 * To test the source code for various metrics, enter the command "sh code_test.sh".
 * To do all of the above, enter the command "sh all.sh".
 * To run an interactive prompt, enter the command "sh console.sh".
