@@ -9,7 +9,8 @@ On the CodeClimate page for your project, you will see 5 issues.  In this chapte
 * In the LICENSE.txt file, fill in your name.
 
 ## Gemspec File
-Assuming that you intend to publish your gem at rubygems, org, remove the entire section that begins with "if spec.respond_to?(:metadata)".
+* Assuming that you intend to publish your gem at rubygems, org, remove the entire section that begins with "if spec.respond_to?(:metadata)".
+* Enter the command "sh git_check.sh".  All tests should pass, there should be 100% test coverage, and there should be no offenses.
 
 ## README.md File
 * Fill in the description of your gem.
