@@ -23,3 +23,14 @@
 * When you ran the all.sh script, a *.gem file should have been created.
 * Enter the command "gem push (name of *.gem file)".  Enter your email address and password when prompted to do so.
 * Congratulations!  Your new gem has been published.
+
+## Adding a Version Badge
+* Go to the [Version Badge web site](https://badge.fury.io/).
+* Enter your gem into the search engine and press "Find".
+* Add the badge to the README.md file of your source code.
+* Enter the following commands:
+```
+git add .
+git commit -m "Added version badge"
+git push origin master
+```
