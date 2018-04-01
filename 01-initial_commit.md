@@ -2,7 +2,7 @@
 In this chapter, you will start a new Ruby gem and commit the source code to GitHub.
 
 ## Bundler
-* Reset the Docker container based on one of the rbenv-general Docker images.
+* Reset the Docker container based on one of the rails-general Docker images.
 * In Docker, enter the following command:
 ```
 bundler gem (name of gem)
