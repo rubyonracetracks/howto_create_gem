@@ -16,4 +16,4 @@ git add .
 git commit -m "Added codeclimate-test-reporter"
 git push origin master
 ```
-* Go to https://gist.github.com/jhsu802701/bfa9a016d5edcbeca8bd6a7ab78bfbae for further instructions.  Remember to add the badges and push the changes to your README.md file.
+* Go to https://github.com/rubyonracetracks/cheat_sheets/blob/master/continuous_integration.md for further instructions.  Remember to add the badges and push the changes to your README.md file.
