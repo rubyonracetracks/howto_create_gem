@@ -1,5 +1,5 @@
 # Chapter 1: Initial Commit
-In this chapter, you will start a new Ruby gem and commit the source code to GitHub.
+In this chapter, you will start a new Ruby gem and commit the source code to BitBucket.
 
 ## Bundler
 * Reset the Docker container based on one of the rails-general Docker images.
